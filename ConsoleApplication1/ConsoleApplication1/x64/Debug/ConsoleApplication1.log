@@ -1,2 +1,4 @@
 ﻿  ConsoleApplication1.cpp
-  ConsoleApplication1.vcxproj -> C:\Users\G301\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+C:\Users\HP\Documents\C++\Github\Repository\GDGRAP1\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(31,59): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\HP\Documents\C++\Github\Repository\GDGRAP1\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(31,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  ConsoleApplication1.vcxproj -> C:\Users\HP\Documents\C++\Github\Repository\GDGRAP1\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

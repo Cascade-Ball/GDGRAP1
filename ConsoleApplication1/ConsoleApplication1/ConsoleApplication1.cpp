@@ -19,7 +19,7 @@ int main(void)
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
-
+    float angle = 18;
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
@@ -27,21 +27,15 @@ int main(void)
         glClear(GL_COLOR_BUFFER_BIT);
 
         glBegin(GL_POLYGON);
-        glVertex2f(0.f, 0.1f * 5); 
-        glVertex2f(0.0951f * 5, 0.0309f * 5);
-        glVertex2f(0.0588f * 5, -0.0809f * 5);
-        glVertex2f(-0.0588f * 5, -0.0809f * 5);
-        glVertex2f(-0.0951f * 5, 0.0309f * 5);
-
-       /* glBegin(GL_TRIANGLES); 
-        glVertex2f(-0.225f, 0.f);
-        glVertex2f(0.125f, -0.25f);
-        glVertex2f(0.f, 0.f);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(0.225f, 0.f);
-        glVertex2f(0.125f, -0.25f);
-        glVertex2f(0.f, 0.f);*/
+        for (int i = 0; i <= 5; i++) {
+            glVertex2f(0.5 * cos(angle * 3.14 / 180), 0.5 * sin(angle * 3.14 / 180));
+            angle = angle + 72;
+        }
+        
+       /* glVertex2f(0.5 * cos(18 * 3.14 / 180), 0.5 * sin(18 * 3.14 / 180));
+        glVertex2f(0.5 * cos(306 * 3.14 / 180), 0.5 * sin(306 * 3.14 / 180));
+        glVertex2f(0.5 * cos(234 * 3.14 / 180), 0.5 * sin(234 * 3.14 / 180));
+        glVertex2f(0.5 * cos(162 * 3.14 / 180), 0.5 * sin(162 * 3.14 / 180));*/
 
         glEnd();
         /* Swap front and back buffers */
